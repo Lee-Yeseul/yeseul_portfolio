@@ -17,7 +17,7 @@ const config: Config = {
         blue: { 1000: "#080d1e" },
       },
       fontSize: {
-        title: "50px",
+        title: "75px",
       },
       borderWidth: {
         1: "1px",
