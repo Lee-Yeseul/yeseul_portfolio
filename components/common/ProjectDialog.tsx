@@ -7,7 +7,10 @@ interface Props {
 
 export default function ProjectDialog({ setIsDialogOpen }: Props) {
   return (
-    <Dialog className="w-[720px]" onClickOutside={() => setIsDialogOpen(false)}>
+    <Dialog
+      className="w-[720px] text-black"
+      onClickOutside={() => setIsDialogOpen(false)}
+    >
       <Dialog.Header className="px-6 h-16 flex items-center justify-center border-solid border-b-[1px] border-gray-300">
         <Dialog.CloseButton
           className="absolute right-6"

@@ -1,8 +1,11 @@
 export default function Header() {
   return (
-    <header className="fixed top-0 left-0 w-full h-16 border-solid border-b-slim border-blue-50 z-10 backdrop-blur-sm bg-blue-1000/50 text-white">
-      <nav className="w-full h-full pr-5">
-        <ul className="w-full h-full flex items-center justify-end gap-10 font-bold">
+    <header className="sticky top-5 left-0 w-full h-16 z-10 text-white">
+      <nav className="w-full h-full flex justify-center items-center">
+        <ul className="h-full flex items-center gap-10 px-10 font-bold border-solid border-slim border-gray-50 rounded-full backdrop-blur-sm bg-blue-1000/50">
+          <li>
+            <a href="#main">🏠</a>
+          </li>
           <li>
             <a href="#about-me">About Me</a>
           </li>
@@ -10,10 +13,7 @@ export default function Header() {
             <a href="#skills">Skills</a>
           </li>
           <li>
-            <a href="#projects">Projects</a>
-          </li>
-          <li>
-            <a href="#career">Career</a>
+            <a href="#career">Timeline</a>
           </li>
         </ul>
       </nav>

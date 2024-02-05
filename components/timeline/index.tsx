@@ -5,16 +5,8 @@ import Activity from "./activity";
 import All from "./all";
 import Career from "./career";
 import Project from "./project";
-
-const all = "all" as const;
-const project = "project" as const;
-const career = "career" as const;
-const activity = "activity" as const;
-type TimelineType =
-  | typeof all
-  | typeof project
-  | typeof career
-  | typeof activity;
+import { TimelineType } from "@/types";
+import { all, project, career, activity } from "@/const";
 
 export default function TimeLine() {
   const [activatedTimeline, setActivatedTimeline] = useState<TimelineType>(all);
@@ -23,7 +15,7 @@ export default function TimeLine() {
     setActivatedTimeline(type);
   };
   return (
-    <div className="pt-20 flex flex-col items-center bg-blue-1000 text-blue-50">
+    <div className="pt-20 flex flex-col items-center">
       <div className="w-1/2">
         <div>
           <button
@@ -34,7 +26,7 @@ export default function TimeLine() {
             }`}
             onClick={() => handleClickFilterButon(all)}
           >
-            all
+            {all}
           </button>
           <button
             className={`border-solid px-3 py-2 rounded-full text-base mr-3 ${
@@ -44,7 +36,7 @@ export default function TimeLine() {
             }`}
             onClick={() => handleClickFilterButon(career)}
           >
-            career
+            {career}
           </button>
           <button
             className={`border-solid px-3 py-2 rounded-full text-base mr-3 ${
@@ -54,7 +46,7 @@ export default function TimeLine() {
             }`}
             onClick={() => handleClickFilterButon(project)}
           >
-            project
+            {project}
           </button>
           <button
             className={`border-solid px-3 py-2 rounded-full text-base mr-3 ${
@@ -64,7 +56,7 @@ export default function TimeLine() {
             }`}
             onClick={() => handleClickFilterButon(activity)}
           >
-            activity
+            {activity}
           </button>
         </div>
         <div className="ml-2 pt-10 pb-20">

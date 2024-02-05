@@ -8,6 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        "iceJaram-Rg": ["iceJaram-Rg"],
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
@@ -17,7 +20,7 @@ const config: Config = {
         blue: { 1000: "#080d1e" },
       },
       fontSize: {
-        title: "75px",
+        title: "96px",
       },
       borderWidth: {
         1: "1px",
@@ -40,6 +43,10 @@ const config: Config = {
     },
   },
 
-  plugins: [],
+  // eslint-disable-next-line no-undef
+  plugins: [require("tailwind-scrollbar-hide")],
 };
 export default config;
+
+// ffd39c
+// 7782f3
