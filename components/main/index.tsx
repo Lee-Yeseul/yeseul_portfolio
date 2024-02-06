@@ -9,7 +9,7 @@ export default function Main() {
       <div className="mt-10 flex flex-col items-center justify-center text-2xl">
         Create value with technology.
         <div className="group relative mt-20">
-          <div className="absolute -inset-1 rounded-lg bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500 opacity-75 blur-md transition duration-500 group-hover:opacity-100"></div>
+          <div className="absolute -inset-1 rounded-lg bg-gradient-to-r from-[#ec56a4] via-[#1f3ae9] to-[#98a7fe] opacity-75 blur-lg transition duration-500 group-hover:opacity-100"></div>
           <button className="relative rounded-lg bg-black px-7 py-4 text-white">
             contact me
           </button>

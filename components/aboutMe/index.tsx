@@ -1,11 +1,11 @@
 import Image from "next/image";
-import testImage from "@/public/assets/images/test_image.jpg";
-import mailIcon from "@/public/assets/icons/mail.svg";
-import cakeIcon from "@/public/assets/icons/cake.svg";
-import schoolIcon from "@/public/assets/icons/school.svg";
-import homeIcon from "@/public/assets/icons/home.svg";
-import personIcon from "@/public/assets/icons/person.svg";
-import githubIcon from "@/public/assets/icons/github-mark.svg";
+
+import MailIcon from "@/public/assets/icons/mail.svg";
+import CakeIcon from "@/public/assets/icons/cake.svg";
+import SchoolIcon from "@/public/assets/icons/school.svg";
+import HomeIcon from "@/public/assets/icons/home.svg";
+import PersonIcon from "@/public/assets/icons/person.svg";
+import telescope from "@/public/assets/images/telescope.png";
 
 export default function AboutMe() {
   return (
@@ -20,40 +20,39 @@ export default function AboutMe() {
           optio eius dolorem, aliquid nostrum quibusdam natus tenetur iure, non
           eos nisi atque, laudantium commodi quam autem architecto? Quidem, quo.
         </div>
-        <div className="mt-3 bg-gray-50 flex items-center rounded-lg">
-          <div className="p-8 w-[48%]">
-            <Image
-              src={testImage}
-              width={250}
-              alt="profile image"
-              className="rounded-full"
-            />
-          </div>
-          <div className="flex flex-col gap-5 text-lg text-black">
-            <div className="flex gap-2 items-center">
-              <Image priority src={personIcon} alt="person" width={26} /> 이예슬
+        <div className="mt-3 flex items-end">
+          <Image src={telescope} width={100} alt="telescope icon" />
+          <div className="flex text-xl/loose text-white mt-10 mb-32 ml-10 w-full">
+            <div className="mr-10">
+              <div className="flex gap-2 items-center">
+                <PersonIcon width={32} fill={"white"} />
+                이예슬
+              </div>
+              <div className="flex gap-2 items-center">
+                <CakeIcon width={32} fill={"white"} />
+                1998.01.19
+              </div>
+              <div className="flex gap-2 items-center">
+                <HomeIcon width={32} fill={"white"} />
+                대한민국 서울시
+              </div>
+              <div className="flex gap-2 items-center">
+                <SchoolIcon width={32} fill={"white"} />
+                경희대학교(정보디스플레이학과)
+              </div>
             </div>
-            <div className="flex gap-2">
-              <Image priority src={cakeIcon} alt="cake" width={26} /> 1998.01.19
-            </div>
-            <div className="flex gap-2">
-              <Image priority src={homeIcon} alt="address" width={26} />
-              대한민국 서울시
-            </div>
-            <div className="flex gap-2">
-              <Image priority src={mailIcon} alt="mail" width={25} />
-              ssulv3030@gmail.com
-            </div>
-            <div className="flex gap-2">
-              <Image priority src={schoolIcon} alt="school" width={26} />
-              경희대학교(정보디스플레이학과)
-            </div>
-            <div className="flex gap-4">
-              <Image priority src={githubIcon} alt="mail" width={36} />
-              <Image priority src={githubIcon} alt="mail" width={36} />
+
+            <div className="flex flex-col gap-4">
+              <div className="flex gap-2 items-center">
+                <MailIcon width={32} fill={"white"} />
+                ssulv3030@gmail.com
+              </div>
             </div>
           </div>
         </div>
+
+        <div className="w-full h-[0.5px] bg-gray-50"></div>
+        <div className="w-full h-4 bg-gradient-to-r from-[#ec56a4] via-[#1f3ae9] to-[#98a7fe] blur-2xl"></div>
       </div>
     </div>
   );

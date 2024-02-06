@@ -3,7 +3,6 @@ import ParticleBackground from "@/components/common/ParticleBackground";
 import Header from "@/components/layout/Header";
 import Main from "@/components/main";
 import Skills from "@/components/skills";
-
 import TimeLine from "@/components/timeline";
 
 /**
@@ -16,7 +15,7 @@ import TimeLine from "@/components/timeline";
  *  scroll snap
  * 5. main에서 header 없애기 ✅
  * sticky
- * 6. 애니메이션 추가
+ * 6. 애니메이션 추가 ✅
  react particles : https://www.youtube.com/watch?v=0K1UfnsMPB8
  canvas api: https://blog.dalgu.app/dev/1
  * 7. 내용 작성
