@@ -1,19 +1,24 @@
 import AboutMe from "@/components/aboutMe";
+import ParticleBackground from "@/components/common/ParticleBackground";
 import Header from "@/components/layout/Header";
 import Main from "@/components/main";
 import Skills from "@/components/skills";
+
 import TimeLine from "@/components/timeline";
 
 /**
  *
  * @TODO
  * 1. layout 정리하기 ✅
- * 2. 아이콘 가져다가 붙이기 ✅
+ * 2. 아이콘 가져다가 붙이기 
+ * -> webpack svgr로 바꿔서 색 바꿀 수 있게 수정하기 
  * 3. scroll하면 한 화면만 나오도록 ✅
  *  scroll snap
- * 5. main에서 header 없애기
+ * 5. main에서 header 없애기 ✅
+ * sticky
  * 6. 애니메이션 추가
- * https://gurtn.tistory.com/164
+ react particles : https://www.youtube.com/watch?v=0K1UfnsMPB8
+ canvas api: https://blog.dalgu.app/dev/1
  * 7. 내용 작성
  */
 export default function Home() {
@@ -35,6 +40,7 @@ export default function Home() {
       <section id="career" className="snap-start">
         <TimeLine />
       </section>
+      <ParticleBackground />
     </main>
   );
 }
