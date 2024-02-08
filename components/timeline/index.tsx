@@ -16,7 +16,7 @@ export default function TimeLine() {
   };
   return (
     <div className="pt-20 flex flex-col items-center">
-      <div className="w-1/2">
+      <div className="xl:w-1/2 lg:w-1/2 w-4/5">
         <div>
           <button
             className={`border-solid px-3 py-2 rounded-full text-base mr-3 ${

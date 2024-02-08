@@ -10,15 +10,18 @@ import telescope from "@/public/assets/images/telescope.png";
 export default function AboutMe() {
   return (
     <div className="h-screen flex flex-col items-center justify-center text-blue-50">
-      <div className="w-1/2">
+      <div className="xl:w-1/2 lg:w-1/2 w-4/5">
         <h3 className="text-3xl font-bold">About Me</h3>
         <div className="mt-3 text-2xl">
-          FEConf 2023의 스피커와 프로그램을 소개합니다.
+          사용자에게 가치를 제공하는 프론트엔드 개발자 이예슬입니다.
         </div>
         <div className="mt-3 text-lg">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem dicta
-          optio eius dolorem, aliquid nostrum quibusdam natus tenetur iure, non
-          eos nisi atque, laudantium commodi quam autem architecto? Quidem, quo.
+          아이디어를 기술로 구현하고 사용자와 서비스를 연결하는 것에 가장 큰
+          가치를 두고 있습니다. 기술을 통해 문제를 해결하는 과정에서 즐거움을
+          느끼며 기술로 사용자에게 더 높은 가치를 제공하고 싶은 개발자입니다.
+          필요한 것이라면 분야와 상관없이 공부하는 것을 좋아합니다. 둘보다 나은
+          하나는 없다고 생각합니다. 아는 것을 공유할 수 있는 개발자가 되고
+          싶습니다.
         </div>
         <div className="mt-3 flex items-end">
           <Image src={telescope} width={100} alt="telescope icon" />

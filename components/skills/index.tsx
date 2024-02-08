@@ -6,37 +6,42 @@ import { useCallback, useRef, useState } from "react";
 export default function Skills() {
   const tempArray = [
     {
-      title: "5",
+      title: "HTML/CSS",
       description:
         " Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius,minus non? Expedita a neque ad vel assumenda ex sed ea culpa quasi,quasi,quasi",
     },
     {
-      title: "React",
+      title: "JavaScript",
       description:
         " Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius,minus non? Expedita a neque ad vel assumenda ex sed ea culpa quasi,quasi,quasi",
     },
     {
-      title: "vue",
+      title: "TypeScript",
       description:
         " Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius,minus non? Expedita a neque ad vel assumenda ex sed ea culpa quasi,quasi,quasi",
     },
     {
-      title: "3",
+      title: "React.js",
       description:
         " Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius,minus non? Expedita a neque ad vel assumenda ex sed ea culpa quasi,quasi,quasi",
     },
     {
-      title: "4",
+      title: "Next.js",
       description:
         " Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius,minus non? Expedita a neque ad vel assumenda ex sed ea culpa quasi,quasi,quasi",
     },
     {
-      title: "5",
+      title: "Vue.js",
       description:
         " Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius,minus non? Expedita a neque ad vel assumenda ex sed ea culpa quasi,quasi,quasi",
     },
     {
-      title: "React",
+      title: "Backend",
+      description:
+        " Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius,minus non? Expedita a neque ad vel assumenda ex sed ea culpa quasi,quasi,quasi",
+    },
+    {
+      title: "Tools",
       description:
         " Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius,minus non? Expedita a neque ad vel assumenda ex sed ea culpa quasi,quasi,quasi",
     },
@@ -85,7 +90,7 @@ export default function Skills() {
 
   return (
     <div className="py-20 flex flex-col items-center">
-      <div className="w-1/2">
+      <div className="xl:w-1/2 lg:w-1/2 w-4/5">
         <h3 className="text-3xl font-bold">Skills</h3>
         <div className="relative mt-20">
           <div

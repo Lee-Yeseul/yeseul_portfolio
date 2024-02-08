@@ -7,6 +7,12 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    screens: {
+      sm: "380px",
+      md: "680px",
+      lg: "920px",
+      xl: "1200px",
+    },
     extend: {
       fontFamily: {
         "iceJaram-Rg": ["iceJaram-Rg"],

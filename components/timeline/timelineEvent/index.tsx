@@ -1,4 +1,5 @@
 import { TimelineType } from "@/types";
+import { ReactNode } from "react";
 
 interface TimelineEventProps {
   event: {
@@ -10,9 +11,10 @@ interface TimelineEventProps {
     icon?: any;
     description: string;
   };
+  children?: ReactNode;
 }
 
-export default function TimelineEvent({ event }: TimelineEventProps) {
+export default function TimelineEvent({ event, children }: TimelineEventProps) {
   const { title, subtitle, type, startDate, endDate, icon, description } =
     event;
   return (
@@ -26,6 +28,7 @@ export default function TimelineEvent({ event }: TimelineEventProps) {
       <div className="mt-2 text-xl font-bold">{title}</div>
       <div className="mt-1 text-base">{subtitle}</div>
       <div className="mt-2 text-base">{description}</div>
+      {children}
     </li>
   );
 }
