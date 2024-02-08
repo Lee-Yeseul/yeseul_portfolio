@@ -5,6 +5,8 @@ import CakeIcon from "@/public/assets/icons/cake.svg";
 import SchoolIcon from "@/public/assets/icons/school.svg";
 import HomeIcon from "@/public/assets/icons/home.svg";
 import PersonIcon from "@/public/assets/icons/person.svg";
+import BlogIcon from "@/public/assets/icons/blog.svg";
+import GithubIcon from "@/public/assets/icons/github.svg";
 import telescope from "@/public/assets/images/telescope.png";
 
 export default function AboutMe() {
@@ -16,16 +18,14 @@ export default function AboutMe() {
           사용자에게 가치를 제공하는 프론트엔드 개발자 이예슬입니다.
         </div>
         <div className="mt-3 text-lg">
-          아이디어를 기술로 구현하고 사용자와 서비스를 연결하는 것에 가장 큰
-          가치를 두고 있습니다. 기술을 통해 문제를 해결하는 과정에서 즐거움을
-          느끼며 기술로 사용자에게 더 높은 가치를 제공하고 싶은 개발자입니다.
-          필요한 것이라면 분야와 상관없이 공부하는 것을 좋아합니다. 둘보다 나은
-          하나는 없다고 생각합니다. 아는 것을 공유할 수 있는 개발자가 되고
-          싶습니다.
+          아이디어를 기술로 구현하고 사용자와 서비스를 연결하는 것에 흥미를 가져
+          개발자가 되었습니다. 기술을 통해 문제를 해결하는 과정에서 즐거움을
+          느끼며 사용자에게 더 높은 가치를 제공하고자 노력합니다. 필요한
+          것이라면 분야와 상관없이 공부하는 것을 좋아합니다.
         </div>
         <div className="mt-3 flex items-end">
           <Image src={telescope} width={100} alt="telescope icon" />
-          <div className="flex text-xl/loose text-white mt-10 mb-32 ml-10 w-full">
+          <div className="flex text-lg/loose text-white mt-10 mb-32 ml-10 w-full">
             <div className="mr-10">
               <div className="flex gap-2 items-center">
                 <PersonIcon width={32} fill={"white"} />
@@ -43,13 +43,29 @@ export default function AboutMe() {
                 <SchoolIcon width={32} fill={"white"} />
                 경희대학교(정보디스플레이학과)
               </div>
-            </div>
-
-            <div className="flex flex-col gap-4">
               <div className="flex gap-2 items-center">
                 <MailIcon width={32} fill={"white"} />
                 ssulv3030@gmail.com
               </div>
+            </div>
+
+            <div className="flex gap-5">
+              <a href="https://github.com/Lee-Yeseul">
+                <BlogIcon
+                  width={40}
+                  height={40}
+                  fill={"white"}
+                  className="rounded-full transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-200"
+                />
+              </a>
+              <a href="https://velog.io/@ssulv3030/posts">
+                <GithubIcon
+                  width={40}
+                  height={40}
+                  fill={"white"}
+                  className="rounded-full transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-200"
+                />
+              </a>
             </div>
           </div>
         </div>

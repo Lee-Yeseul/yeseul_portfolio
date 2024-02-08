@@ -3,7 +3,9 @@ export default function Main() {
     <div className="h-screen font-bold">
       <div className="h-1/2 flex justify-around items-end ">
         <div className="w-full flex items-center justify-center">
-          <div className="text-title"> YESEUL LEE</div>
+          <div className="xl:text-title lg:text-title  md:text-title sm:text-6xl">
+            YESEUL LEE
+          </div>
         </div>
       </div>
       <div className="mt-10 flex flex-col items-center justify-center text-2xl">
