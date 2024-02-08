@@ -7,43 +7,71 @@ export default function Skills() {
   const tempArray = [
     {
       title: "HTML/CSS",
-      description:
-        " Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius,minus non? Expedita a neque ad vel assumenda ex sed ea culpa quasi,quasi,quasi",
+      description: (
+        <div>
+          ● 웹 표준을 준수하며 시맨틱 태그를 적극적으로 활용합니다. <br />●
+          반응형 디자인을 구현할 수 있습니다.
+          <br />● scss, sass 등의 css 전처리기를 활용할 수 있습니다.
+        </div>
+      ),
     },
     {
-      title: "JavaScript",
-      description:
-        " Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius,minus non? Expedita a neque ad vel assumenda ex sed ea culpa quasi,quasi,quasi",
-    },
-    {
-      title: "TypeScript",
-      description:
-        " Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius,minus non? Expedita a neque ad vel assumenda ex sed ea culpa quasi,quasi,quasi",
+      title: "JavaScript/TypeScript",
+      description: (
+        <div>
+          ● ES6+ 문법에 익숙합니다.
+          <br />
+          ● TypeScript를 사용하여 타입 안전성을 지키려 노력합니다. <br />●
+          Jest를 사용해 테스트 코드를 작성한 경험이 있습니다.
+        </div>
+      ),
     },
     {
       title: "React.js",
-      description:
-        " Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius,minus non? Expedita a neque ad vel assumenda ex sed ea culpa quasi,quasi,quasi",
+      description: (
+        <div>
+          ● React의 함수형 컴포넌트와 hook을 활용하여 재사용 가능한 컴포넌트를
+          구현할 수 있습니다. <br />● Recoil, Zustand 등의 상태관리 라이브러리
+          사용 경험이 있습니다.
+        </div>
+      ),
     },
     {
       title: "Next.js",
-      description:
-        " Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius,minus non? Expedita a neque ad vel assumenda ex sed ea culpa quasi,quasi,quasi",
+      description: (
+        <div>
+          ● Page router와 App router의 차이를 알고 있으며 상황에 따라 CSR, SSR,
+          SSG, ISR 등 적합한 렌더링 방식을 활용할 수 있습니다.
+        </div>
+      ),
     },
     {
       title: "Vue.js",
-      description:
-        " Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius,minus non? Expedita a neque ad vel assumenda ex sed ea culpa quasi,quasi,quasi",
+      description: (
+        <div>
+          ● Vue3의 composition API를 활용할 수 있습니다.
+          <br /> ● Pinia 등의 상태관리 라이브러리 사용 경험이 있습니다.
+        </div>
+      ),
     },
     {
       title: "Backend",
-      description:
-        " Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius,minus non? Expedita a neque ad vel assumenda ex sed ea culpa quasi,quasi,quasi",
+      description: (
+        <div>
+          ● Express를 사용해 RESTful API를 만들 수 있습니다.
+          <br /> ● MongoDB와 Postgres를 사용한 경험이 있습니다.
+        </div>
+      ),
     },
     {
       title: "Tools",
-      description:
-        " Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius,minus non? Expedita a neque ad vel assumenda ex sed ea culpa quasi,quasi,quasi",
+      description: (
+        <div>
+          ● Git을 사용해 협업할 수 있으며 상황에 따라 적합한 merge 전략을 사용할
+          수 있습니다. <br />● JIRA, Confluence, Slack, Notion을 활용해 협업한
+          경험이 있습니다.
+        </div>
+      ),
     },
   ];
   const ref = useRef<HTMLDivElement>(null);
@@ -113,7 +141,7 @@ export default function Skills() {
               <div
                 key={idx}
                 id={String(idx)}
-                className="shrink-0 w-64 h-64 p-5 border-1 border-solid border-gray-300 rounded-md"
+                className="shrink-0 w-72 h-64 p-5 border-1 border-solid border-gray-300 bg-white/10 rounded-md"
                 ref={
                   idx === 0
                     ? setLeftScrollTarget
@@ -122,8 +150,10 @@ export default function Skills() {
                     : null
                 }
               >
-                <div className="font-bold text-lg">🟡 {title}</div>
-                <div className="mt-3 text-base">{description}</div>
+                <div className="font-bold text-lg">{title}</div>
+                <div className="mt-3 text-base/7 break-words">
+                  {description}
+                </div>
               </div>
             ))}
           </div>
