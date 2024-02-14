@@ -122,7 +122,7 @@ export default function Skills() {
         <h3 className="text-3xl font-bold">Skills</h3>
         <div className="relative mt-20">
           <div
-            className={`absolute -left-16 bottom-1/2 ${
+            className={`absolute -left-16 top-1/2 ${
               leftScrollBtnVisibleState ? "visible animate-fade-in" : "hidden"
             } z-30 text-white`}
           >

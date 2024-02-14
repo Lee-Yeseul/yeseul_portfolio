@@ -9,7 +9,8 @@ import { TimelineType } from "@/types";
 import { all, project, career, activity } from "@/const";
 
 export default function TimeLine() {
-  const [activatedTimeline, setActivatedTimeline] = useState<TimelineType>(all);
+  const [activatedTimeline, setActivatedTimeline] =
+    useState<TimelineType>(career);
   const timelineTypeList = [career, project, activity, all];
 
   const handleClickFilterButon = (type: TimelineType) => {

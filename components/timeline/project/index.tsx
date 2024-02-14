@@ -34,10 +34,10 @@ export const projectList = [
       <div>
         <div className="mb-2">개인 포트폴리오 사이트입니다.</div>
         <div>
-          <div className="font-bold">주요 기능</div>
+          <div className="font-bold text-red-500">주요 기능</div>
           - 포트폴리오 용도로 제작한 사이트입니다.
           <br />
-          <div className="font-bold">구현 방법</div>-{" "}
+          <div className="font-bold text-red-500">구현 방법</div>-{" "}
           <span className="font-bold">Next.js</span>와 tailwind CSS를
           사용하였습니다.
           <br />- Next.js의 App router를 사용해 개발하였으며 vercel로
@@ -76,11 +76,11 @@ export const projectList = [
             블로그와 노션의 간단한 썸네일 이미지를 만들 수 있는 서비스입니다.
           </div>
           <div>
-            <div className="font-bold">주요 기능</div>- 제목과 부제목을 작성하고
-            배경 색 또는 배경 이미지를 선택하여 썸네일 이미지를 만들어
-            다운로드할 수 있습니다.
+            <div className="font-bold text-red-500">주요 기능</div>- 제목과
+            부제목을 작성하고 배경 색 또는 배경 이미지를 선택하여 썸네일
+            이미지를 만들어 다운로드할 수 있습니다.
             <br />
-            <div className="font-bold">구현 방법</div>-{" "}
+            <div className="font-bold text-red-500">구현 방법</div>-{" "}
             <span className="font-bold">React</span>와 style component를
             사용하였습니다. <br />- 오픈 API를 활용해 검색된 이미지를 배경으로
             사용할 수 있도록 구현했으며 검색은{" "}
@@ -124,7 +124,7 @@ export const projectList = [
       <div>
         초대장을 꾸며 상대방에게 전달할 수 있는 서비스입니다.
         <div>
-          <div className="font-bold">주요 기능</div>
+          <div className="font-bold text-red-500">주요 기능</div>
           <div>
             - 초대장 문구를 작성하고 원하는 부분에 스티커와 캐릭터 이미지를 붙여
             초대장을 꾸밀 수 있습니다.
@@ -135,7 +135,7 @@ export const projectList = [
           </div>
         </div>
         <div>
-          <div className="font-bold">구현 방법</div>
+          <div className="font-bold text-red-500">구현 방법</div>
           <div>
             - <span className="font-bold">React</span>와 tailwind CSS를
             사용했습니다.
