@@ -5,19 +5,11 @@ import { type Container, type ISourceOptions } from "@tsparticles/engine";
 import { loadFull } from "tsparticles";
 
 export default function ParticleBackground() {
-  const [init, setInit] = useState(false);
-
   useEffect(() => {
     initParticlesEngine(async (engine) => {
       await loadFull(engine);
-    }).then(() => {
-      setInit(true);
     });
   }, []);
-
-  const particlesLoaded = async (container?: Container): Promise<void> => {
-    console.log(container);
-  };
 
   const options: ISourceOptions = useMemo(
     () => ({
@@ -91,11 +83,5 @@ export default function ParticleBackground() {
     []
   );
 
-  return (
-    <Particles
-      id="tsparticles"
-      particlesLoaded={particlesLoaded}
-      options={options}
-    />
-  );
+  return <Particles id="tsparticles" options={options} />;
 }

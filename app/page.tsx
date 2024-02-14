@@ -1,5 +1,6 @@
 import AboutMe from "@/components/aboutMe";
 import ParticleBackground from "@/components/common/ParticleBackground";
+import Footer from "@/components/layout/Footer";
 import Header from "@/components/layout/Header";
 import Main from "@/components/main";
 import Skills from "@/components/skills";
@@ -27,7 +28,7 @@ export default function Home() {
   return (
     <main
       id="root"
-      className="max-h-screen bg-black text-white overflow-y-scroll snap-mandatory snap-y"
+      className="max-h-screen bg-black text-white overflow-y-scroll snap-mandatory snap-y scroll-smooth"
     >
       <section id="main" className="snap-start">
         <Main />
@@ -42,6 +43,7 @@ export default function Home() {
       <section id="career" className="snap-start">
         <TimeLine />
       </section>
+      <Footer />
       <ParticleBackground />
     </main>
   );

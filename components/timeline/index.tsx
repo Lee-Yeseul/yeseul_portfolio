@@ -10,6 +10,7 @@ import { all, project, career, activity } from "@/const";
 
 export default function TimeLine() {
   const [activatedTimeline, setActivatedTimeline] = useState<TimelineType>(all);
+  const timelineTypeList = [career, project, activity, all];
 
   const handleClickFilterButon = (type: TimelineType) => {
     setActivatedTimeline(type);
@@ -18,49 +19,28 @@ export default function TimeLine() {
     <div className="pt-20 flex flex-col items-center">
       <div className="xl:w-1/2 lg:w-1/2 w-4/5">
         <div>
-          <button
-            className={`border-solid px-3 py-2 rounded-full text-base mr-3 ${
-              activatedTimeline === all
-                ? "bg-white text-black"
-                : "text-white bg-gray-800"
-            }`}
-            onClick={() => handleClickFilterButon(all)}
-          >
-            {all}
-          </button>
-          <button
-            className={`border-solid px-3 py-2 rounded-full text-base mr-3 ${
-              activatedTimeline === career
-                ? "bg-white text-black"
-                : "text-white bg-gray-800"
-            }`}
-            onClick={() => handleClickFilterButon(career)}
-          >
-            {career}
-          </button>
-          <button
-            className={`border-solid px-3 py-2 rounded-full text-base mr-3 ${
-              activatedTimeline === project
-                ? "bg-white text-black"
-                : "text-white bg-gray-800"
-            }`}
-            onClick={() => handleClickFilterButon(project)}
-          >
-            {project}
-          </button>
-          <button
-            className={`border-solid px-3 py-2 rounded-full text-base mr-3 ${
-              activatedTimeline === activity
-                ? "bg-white text-black"
-                : "text-white bg-gray-800"
-            }`}
-            onClick={() => handleClickFilterButon(activity)}
-          >
-            {activity}
-          </button>
+          {timelineTypeList.map((type) => (
+            <button
+              key={type}
+              className={`border-solid px-3 py-2 rounded-full text-base mr-3 ${
+                activatedTimeline === type
+                  ? "bg-white text-black"
+                  : "text-white bg-gray-800"
+              }`}
+              onClick={() => handleClickFilterButon(type)}
+            >
+              {type}
+            </button>
+          ))}
         </div>
         <div className="ml-2 pt-10 pb-20">
-          {activatedTimeline === all && <All />}
+          {activatedTimeline === all && (
+            <>
+              <Career />
+              <Project />
+              <Activity />
+            </>
+          )}
           {activatedTimeline === career && <Career />}
           {activatedTimeline === project && <Project />}
           {activatedTimeline === activity && <Activity />}

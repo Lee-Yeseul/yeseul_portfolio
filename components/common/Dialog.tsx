@@ -69,7 +69,7 @@ function Footer({ children, className }: CompoundItem) {
 function CloseButton({ onClose, className }: CloseButtonProps) {
   return (
     <button className={className} onClick={() => onClose()}>
-      X
+      ✕
     </button>
   );
 }
