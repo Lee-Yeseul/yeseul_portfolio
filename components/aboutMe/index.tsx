@@ -50,7 +50,7 @@ export default function AboutMe() {
             </div>
 
             <div className="flex gap-5">
-              <a href="https://github.com/Lee-Yeseul">
+              <a href="https://velog.io/@ssulv3030/posts">
                 <BlogIcon
                   width={40}
                   height={40}
@@ -58,7 +58,7 @@ export default function AboutMe() {
                   className="rounded-full transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-200"
                 />
               </a>
-              <a href="https://velog.io/@ssulv3030/posts">
+              <a href="https://github.com/Lee-Yeseul">
                 <GithubIcon
                   width={40}
                   height={40}

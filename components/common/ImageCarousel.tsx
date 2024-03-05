@@ -112,14 +112,14 @@ export default function ImageCarousel({ imageList: data }: CardProps) {
       </div>
       <button
         onClick={() => handleSwife(-1)}
-        className="absolute left-2 top-1/2 w-8 h-8 bg-blue-500 text-white rounded-full p-2 hover:shadow-sm shadow-grey-500 invisible group-hover:visible opacity-75 hover:opacity-100"
+        className="absolute left-2 top-1/2 w-8 h-8 bg-gray-500 text-white rounded-full p-2 hover:shadow-sm shadow-grey-500 invisible group-hover:visible opacity-75 hover:opacity-100"
       >
         {"<"}
       </button>
 
       <button
         onClick={() => handleSwife(1)}
-        className="absolute right-2 top-1/2 w-8 h-8 bg-blue-500 text-white rounded-full p-2 hover:shadow-sm shadow-grey-500 invisible group-hover:visible opacity-75 hover:opacity-100"
+        className="absolute right-2 top-1/2 w-8 h-8 bg-gray-500 text-white rounded-full p-2 hover:shadow-sm shadow-grey-500 invisible group-hover:visible opacity-75 hover:opacity-100"
       >
         {">"}
       </button>
@@ -130,8 +130,8 @@ export default function ImageCarousel({ imageList: data }: CardProps) {
               key={index}
               className={`rounded-full ${
                 image.id === currentImageIndex - 1
-                  ? "bg-[#1f3ae9] w-2.5 h-2.5"
-                  : "bg-[#98a7fe] w-2 h-2"
+                  ? "bg-gray-500 w-2.5 h-2.5"
+                  : "bg-gray-300 w-2 h-2"
               }`}
             ></div>
           ))}

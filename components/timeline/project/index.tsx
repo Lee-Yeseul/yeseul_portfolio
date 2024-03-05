@@ -13,8 +13,51 @@ import cherryblossom2 from "@/public/assets/images/project/cherryblossom2.png";
 import cherryblossom3 from "@/public/assets/images/project/cherryblossom3.png";
 import portfolio1 from "@/public/assets/images/project/portfolio1.png";
 import portfolio2 from "@/public/assets/images/project/portfolio2.png";
+import blog1 from "@/public/assets/images/project/blog1.png";
+import blog2 from "@/public/assets/images/project/blog2.png";
 
 export const projectList = [
+  {
+    title: "Obsidian-Nextjs-blog-starter-kit",
+    startDate: "2024.03",
+    subtitle:
+      "Obsidian을 백엔드로 사용해 Next.js로 블로그를 만들 수 있는 starter kit | 개인 프로젝트",
+    type: project,
+    imageList: [
+      {
+        id: 0,
+        src: blog1,
+      },
+      {
+        id: 1,
+        src: blog2,
+      },
+    ],
+    projectDescription: (
+      <div>
+        <div className="mb-2">Obsidian-Nextjs-blog-starter-kit</div>
+        <div>
+          <div className="font-bold text-red-500">주요 기능</div>
+          Obsidian을 백엔드로 사용해 Next.js로 블로그를 만들 수 있는 starter kit
+          <span className="px-2 text-red-500">
+            npx create-obsidian-nextjs-blog
+          </span>
+          로 starter kit을 다운받아 쉽게 블로그를 시작할 수 있습니다.
+          <br />
+          <div className="font-bold text-red-500">구현 방법</div>-{" "}
+          <code className="font-bold">Next.js의 App router</code>와 tailwind
+          CSS를 사용하였습니다.
+          <br />- octokit을 사용해 Github REST API를 활용하여 Obsidian Vault가
+          올라가있는 레포지토리에서 마크다운 파일을 바로 가져올 수 있도록
+          했습니다.
+          <br />- npm에 starter kit을 배포하여 프로젝트를 간단하게 다운받을 수
+          있도록 했습니다.
+        </div>
+      </div>
+    ),
+    githubURL: "https://github.com/Lee-Yeseul/yeseul_portfolio",
+    serviceURL: "https://yeseul-portfolio.vercel.app/",
+  },
   {
     title: "개인 포트폴리오",
     startDate: "2024.02",
